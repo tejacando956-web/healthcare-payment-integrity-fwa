@@ -1,0 +1,81 @@
+provider_id,specialty,region
+PR001,Primary Care,South
+PR002,Primary Care,Midwest
+PR003,Primary Care,West
+PR004,Primary Care,Northeast
+PR005,Primary Care,South
+PR006,Primary Care,Midwest
+PR007,Primary Care,West
+PR008,Primary Care,Northeast
+PR009,Primary Care,South
+PR010,Primary Care,Midwest
+PR011,Primary Care,West
+PR012,Primary Care,Northeast
+PR013,Primary Care,South
+PR014,Primary Care,Midwest
+PR015,Primary Care,West
+PR016,Primary Care,Northeast
+PR017,Primary Care,South
+PR018,Primary Care,Midwest
+PR019,Primary Care,West
+PR020,Primary Care,Northeast
+PR021,Primary Care,South
+PR022,Primary Care,Midwest
+PR023,Internal Medicine,West
+PR024,Internal Medicine,Northeast
+PR025,Internal Medicine,South
+PR026,Internal Medicine,Midwest
+PR027,Internal Medicine,West
+PR028,Internal Medicine,Northeast
+PR029,Internal Medicine,South
+PR030,Internal Medicine,Midwest
+PR031,Internal Medicine,West
+PR032,Internal Medicine,Northeast
+PR033,Internal Medicine,South
+PR034,Internal Medicine,Midwest
+PR035,Internal Medicine,West
+PR036,Internal Medicine,Northeast
+PR037,Internal Medicine,South
+PR038,Internal Medicine,Midwest
+PR039,Psychiatry,West
+PR040,Psychiatry,Northeast
+PR041,Psychiatry,South
+PR042,Psychiatry,Midwest
+PR043,Psychiatry,West
+PR044,Psychiatry,Northeast
+PR045,Psychiatry,South
+PR046,Psychiatry,Midwest
+PR047,Psychiatry,West
+PR048,Psychiatry,Northeast
+PR049,Physical Therapy,South
+PR050,Physical Therapy,Midwest
+PR051,Physical Therapy,West
+PR052,Physical Therapy,Northeast
+PR053,Physical Therapy,South
+PR054,Physical Therapy,Midwest
+PR055,Physical Therapy,West
+PR056,Physical Therapy,Northeast
+PR057,Physical Therapy,South
+PR058,Physical Therapy,Midwest
+PR059,Physical Therapy,West
+PR060,Physical Therapy,Northeast
+PR061,Radiology,South
+PR062,Radiology,Midwest
+PR063,Radiology,West
+PR064,Radiology,Northeast
+PR065,Radiology,South
+PR066,Radiology,Midwest
+PR067,Radiology,West
+PR068,Radiology,Northeast
+PR069,Orthopedics,South
+PR070,Orthopedics,Midwest
+PR071,Orthopedics,West
+PR072,Orthopedics,Northeast
+PR073,Orthopedics,South
+PR074,Orthopedics,Midwest
+PR075,Orthopedics,West
+PR076,Orthopedics,Northeast
+PR077,Orthopedics,South
+PR078,Orthopedics,Midwest
+PR079,Orthopedics,West
+PR080,Orthopedics,Northeast

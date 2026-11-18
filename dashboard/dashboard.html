@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Payment Integrity — FWA Detection Dashboard</title><style>
+body{font-family:system-ui,Arial,sans-serif;background:#f6f8fb;color:#1c2733;margin:0}
+header{background:#7b241c;color:#fff;padding:26px 20px;text-align:center}h1{margin:0;font-size:26px}
+main{max-width:1080px;margin:0 auto;padding:20px 16px 50px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0}
+.kpi{background:#fff;border-radius:10px;padding:14px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.kpi b{display:block;font-size:19px;color:#7b241c}.kpi small{color:#5b6b7c}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.card img{width:100%;border:1px solid #e3ebf2;border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid #e3ebf2;text-align:left}
+h2{color:#7b241c}footer{text-align:center;color:#5b6b7c;font-size:12px;padding:16px}</style></head><body>
+<header><h1>Payment Integrity Analytics — Claims Fraud, Waste &amp; Abuse Detection</h1>
+<p>Portfolio project · Synthetic data, no PHI · Rule-based detection: duplicates · upcoding · provider outliers · excessive units · weekend billing</p></header>
+<main><div class="kpis"><div class="kpi"><b>2,767</b><small>Total Claims</small></div><div class="kpi"><b>$443,611.40</b><small>Total Paid</small></div><div class="kpi"><b>454 (16.41%)</b><small>Flagged Claims</small></div><div class="kpi"><b>$113,431.95</b><small>Recovery Exposure</small></div><div class="kpi"><b>$10,370.23</b><small>Duplicate Paid</small></div><div class="kpi"><b>125 claims</b><small>Upcoding Suspects</small></div><div class="kpi"><b>10 of 80</b><small>High-Risk Providers</small></div><div class="kpi"><b>PR012 — 100.0/100</b><small>Top Risk Provider</small></div></div>
+<div class="grid">
+<div class="card"><h3>Recovery exposure by flag type</h3><img src="../images/flagged_amount_by_type.png" alt="Flagged amount by type"></div>
+<div class="card"><h3>Provider risk outliers</h3><img src="../images/provider_risk_outliers.png" alt="Provider risk outliers"></div>
+<div class="card"><h3>Monthly flagged trend</h3><img src="../images/monthly_flagged_trend.png" alt="Monthly flagged trend"></div>
+<div class="card"><h3>Billed vs paid by procedure</h3><img src="../images/billed_vs_paid_by_procedure.png" alt="Billed vs paid by procedure"></div>
+</div>
+<h2>Flag summary</h2><div class="card"><table><tr><th>Flag type</th><th>Claims</th><th>Paid $</th></tr><tr><td>duplicate</td><td>45</td><td>$10,370.23</td></tr><tr><td>upcoding_suspect</td><td>125</td><td>$22,120.00</td></tr><tr><td>provider_outlier</td><td>184</td><td>$67,785.66</td></tr><tr><td>excessive_units</td><td>60</td><td>$20,039.33</td></tr><tr><td>weekend_billing</td><td>71</td><td>$5,869.85</td></tr></table>
+<p style="font-size:13px;color:#5b6b7c">Types overlap — a claim can carry several flags. Total exposure (union) is $113,431.95.</p></div>
+<h2>Top 10 provider risk ranking</h2><div class="card"><table>
+<tr><th>Provider</th><th>Specialty</th><th>Region</th><th>Claims</th><th>Avg billed</th><th>Upcoding</th><th>Weekend</th><th>Flagged</th><th>Risk score</th><th>Tier</th></tr><tr><td>PR012</td><td>Primary Care</td><td>Northeast</td><td>47</td><td>$223</td><td>73.5%</td><td>4%</td><td>32</td><td><b>100.0</b></td><td>High</td></tr><tr><td>PR041</td><td>Psychiatry</td><td>South</td><td>31</td><td>$364</td><td>32.3%</td><td>19%</td><td>31</td><td><b>100.0</b></td><td>High</td></tr><tr><td>PR029</td><td>Internal Medicine</td><td>South</td><td>53</td><td>$234</td><td>63.6%</td><td>9%</td><td>31</td><td><b>100.0</b></td><td>High</td></tr><tr><td>PR007</td><td>Primary Care</td><td>West</td><td>40</td><td>$297</td><td>0.0%</td><td>8%</td><td>40</td><td><b>97.3</b></td><td>High</td></tr><tr><td>PR031</td><td>Internal Medicine</td><td>West</td><td>44</td><td>$214</td><td>37.5%</td><td>7%</td><td>34</td><td><b>85.3</b></td><td>High</td></tr><tr><td>PR063</td><td>Radiology</td><td>West</td><td>25</td><td>$1,909</td><td>0.0%</td><td>4%</td><td>25</td><td><b>82.1</b></td><td>High</td></tr><tr><td>PR071</td><td>Orthopedics</td><td>West</td><td>52</td><td>$245</td><td>83.3%</td><td>8%</td><td>25</td><td><b>70.7</b></td><td>High</td></tr><tr><td>PR049</td><td>Physical Therapy</td><td>South</td><td>45</td><td>$381</td><td>0.0%</td><td>2%</td><td>27</td><td><b>66.0</b></td><td>High</td></tr><tr><td>PR048</td><td>Psychiatry</td><td>Northeast</td><td>58</td><td>$163</td><td>55.2%</td><td>3%</td><td>32</td><td><b>60.2</b></td><td>High</td></tr><tr><td>PR076</td><td>Orthopedics</td><td>Northeast</td><td>30</td><td>$571</td><td>0.0%</td><td>7%</td><td>12</td><td><b>56.7</b></td><td>High</td></tr></table></div>
+<h2>Largest flagged claims (review worklist)</h2><div class="card"><table>
+<tr><th>Claim</th><th>Provider</th><th>Procedure</th><th>Date</th><th>Billed</th><th>Paid</th><th>Flags</th></tr><tr><td>CLM000876</td><td>PR063</td><td>72148</td><td>2025-04-22</td><td>$3,346</td><td>$2,629.36</td><td>provider_outlier</td></tr><tr><td>CLM001522</td><td>PR063</td><td>72148</td><td>2025-07-15</td><td>$3,034</td><td>$2,578.60</td><td>provider_outlier</td></tr><tr><td>CLM000617</td><td>PR063</td><td>70553</td><td>2025-03-19</td><td>$4,456</td><td>$2,495.92</td><td>duplicate;provider_outlier</td></tr><tr><td>CLM000614</td><td>PR063</td><td>70553</td><td>2025-03-19</td><td>$4,456</td><td>$2,495.92</td><td>provider_outlier</td></tr><tr><td>CLM000095</td><td>PR063</td><td>70553</td><td>2025-01-14</td><td>$3,104</td><td>$2,369.67</td><td>provider_outlier</td></tr><tr><td>CLM002736</td><td>PR063</td><td>70553</td><td>2025-12-27</td><td>$2,545</td><td>$2,152.35</td><td>provider_outlier</td></tr><tr><td>CLM000312</td><td>PR063</td><td>70553</td><td>2025-02-11</td><td>$3,299</td><td>$1,956.15</td><td>provider_outlier</td></tr><tr><td>CLM001001</td><td>PR063</td><td>73721</td><td>2025-05-07</td><td>$2,991</td><td>$1,945.24</td><td>provider_outlier</td></tr><tr><td>CLM002732</td><td>PR063</td><td>73721</td><td>2025-12-26</td><td>$2,812</td><td>$1,830.78</td><td>provider_outlier</td></tr><tr><td>CLM000386</td><td>PR063</td><td>73721</td><td>2025-02-19</td><td>$2,410</td><td>$1,648.46</td><td>provider_outlier</td></tr><tr><td>CLM002066</td><td>PR063</td><td>72148</td><td>2025-09-24</td><td>$2,384</td><td>$1,532.24</td><td>provider_outlier</td></tr><tr><td>CLM000181</td><td>PR063</td><td>73721</td><td>2025-01-24</td><td>$1,813</td><td>$1,454.37</td><td>provider_outlier</td></tr></table></div>
+<h2>Key insights</h2><div class="card"><ul>
+<li><b>454 of 2,767 claims (16.4%)</b> tripped at least one FWA rule — <b>$113,431.95</b> of paid dollars routed to review.</li>
+<li><b>Duplicates are the cleanest recovery:</b> 45 duplicate copies, $10,370.23 paid on exact re-billings.</li>
+<li><b>Top risk provider PR012</b> scores 100.0/100 — avg billed per claim $222.97 vs a specialty peer median of $94.20.</li>
+<li><b>Provider-outlier claims carry the largest dollars</b> ($67,786 paid), ahead of upcoding suspects ($22,120) and excessive units ($20,039).</li>
+<li>Outliers are investigation leads, not proof of fraud — route High tier to pre-payment review and record requests, then recalibrate thresholds with confirmed outcomes.</li>
+</ul></div></main>
+<footer>Payment Integrity Analytics — portfolio project by Teja Pasupuleti · Synthetic data only · Full code, SQL and tests in this repo</footer>
+</body></html>
